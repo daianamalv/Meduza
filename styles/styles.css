@@ -6,6 +6,8 @@ header, .panel, .timestamp {
    font-family: georgia, serif;
  }
   * {
+  box-sizing: border-box;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -29,6 +31,7 @@ body > header {
 .logo {
   width: 100px;
   height: 21px;
+  margin-top: -6px;
 }
 
 body > header ul {
@@ -44,4 +47,23 @@ header ul {
 
   justify-content: center;
   align-items: center;
+}
+
+.panel {
+  position: relative;
+
+  height: 45px;
+  padding: 15px;
+
+  border-bottom: 1px solid #ccc;
+  background-color: white;
+
+  font-weight: bold;
+
+}
+
+.panel button {
+  position: absolute;
+  right: 0;
+
 }
