@@ -9,3 +9,39 @@ header, .panel, .timestamp {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body > header {
+   display: flex;
+
+   height: 45px;
+
+   letter-spacing: 1px;
+   text-transform: uppercase;
+
+   color: white;
+   background-color: rgb(38, 38, 38);
+
+   font-size: 13px;
+
+   align-items: center;
+   justify-content: space-between;
+
+ }
+.logo {
+  width: 100px;
+  height: 21px;
+}
+
+body > header ul {
+  display: flex;
+}
+
+body > header li {
+  padding-right: 15px;
+}
+
+header ul {
+  display: inline-flex;
+
+  justify-content: center;
+  align-items: center;
+}
