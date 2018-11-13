@@ -2,6 +2,7 @@
 header, .panel, .timestamp {
   font-family: arial, sans-serif;
 }
+@import "fonts.css";
  h3 {
    font-family: georgia, serif;
  }
@@ -28,6 +29,15 @@ body > header {
    justify-content: space-between;
 
  }
+
+header, .panel, .timestamp {
+  font-family: "Proxima Nova", sans-serif;
+}
+
+h3 {
+  font-family: "PF Regal", sans-serif;
+}
+
 .logo {
   width: 100px;
   height: 21px;
@@ -40,6 +50,8 @@ body > header ul {
 
 body > header li {
   padding-right: 15px;
+
+  font-weight: 600;
 }
 
 header ul {
@@ -84,7 +96,12 @@ section {
 }
 
 .is-important {
+  display: flex;
+
   width: 50%;
+  height: 100%;
+
+  flex-flow: column;
 }
 
 .container-right {
@@ -115,5 +132,21 @@ section {
 }
 
 .timestamp {
+  font-size: 12px;
 
+}
+
+.top-stories__header {
+padding: 16px 18px 0;
+
+  text-transform: uppercase;
+
+  color: grey;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.is-important h3 {
+    font-size: 34px;
 }
